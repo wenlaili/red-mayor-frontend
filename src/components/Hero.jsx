@@ -3,7 +3,7 @@ import heroImg from "../assets/hero.png";
 export default function Hero() {
   return (
     <section id="inicio" className="mx-auto max-w-[1180px] px-8 py-12 md:py-20">
-      <div className="grid grid-cols-1 items-center gap-12 md:grid-cols-2">
+      <div className="grid grid-cols-1 items-center gap-12 sm:grid-cols-2">
         {/* Columna de texto */}
         <div className="flex flex-col items-start text-left">
           <h1 className="text-3xl font-extrabold leading-tight text-verde-oscuro sm:text-4xl lg:text-5xl">
