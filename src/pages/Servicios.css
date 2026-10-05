@@ -1,0 +1,260 @@
+.pagina-servicios {
+    background-color: #faf8f3;
+    padding: 30px 20px;
+}
+
+
+/* CABECERA */
+
+.cabecera-servicios {
+    max-width: 900px;
+    margin: 20px auto 40px auto;
+    padding: 40px 25px;
+    text-align: center;
+    background-color: #e9f3ea;
+    border-radius: 18px;
+}
+
+.cabecera-servicios h1 {
+    margin: 10px 0;
+    font-family: Georgia, serif;
+    font-size: 42px;
+    color: #315c45;
+}
+
+.cabecera-servicios p {
+    font-size: 19px;
+    line-height: 1.6;
+}
+
+.texto-pequeno {
+    color: #4c8162;
+    font-weight: bold;
+}
+
+
+/* TARJETAS */
+
+.contenedor-servicios {
+    max-width: 1050px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 28px;
+}
+
+.servicio-card {
+    width: 44%;
+    padding: 28px;
+    text-align: center;
+    background-color: white;
+    border: 1px solid #dddddd;
+    border-top: 6px solid #4c8162;
+    border-radius: 15px;
+    box-shadow: 0 2px 8px #dddddd;
+}
+
+.servicio-card h2 {
+    font-family: Georgia, serif;
+    color: #315c45;
+    font-size: 25px;
+}
+
+.servicio-card p {
+    font-size: 17px;
+    line-height: 1.5;
+}
+
+.servicio-icono {
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+
+
+/* COLORES */
+
+.borde-verde {
+    border-top-color: #65a675;
+}
+
+.borde-rojo {
+    border-top-color: #d87b72;
+}
+
+.borde-azul {
+    border-top-color: #6f9db5;
+}
+
+.borde-amarillo {
+    border-top-color: #d9b657;
+}
+
+.borde-naranja {
+    border-top-color: #d9935b;
+}
+
+.borde-morado {
+    border-top-color: #9781ad;
+}
+
+
+/* BOTONES */
+
+.servicio-card button {
+    margin-top: 10px;
+    padding: 11px 22px;
+    background-color: #4c8162;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.servicio-card button:hover {
+    background-color: #315c45;
+}
+
+.informacion-extra {
+    margin-top: 18px;
+    padding-top: 12px;
+    border-top: 1px solid #d8dfd8;
+    color: #536259;
+}
+
+
+/* FORMULARIO */
+
+.formulario-servicios {
+    max-width: 720px;
+    margin: 60px auto;
+    padding: 35px;
+    background-color: #fff8e9;
+    border: 2px solid #eadbbd;
+    border-radius: 16px;
+}
+
+.formulario-servicios h2 {
+    font-family: Georgia, serif;
+    color: #315c45;
+    font-size: 28px;
+}
+
+.formulario-servicios > p {
+    font-size: 17px;
+    line-height: 1.5;
+}
+
+.formulario-servicios form {
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario-servicios label {
+    margin-top: 18px;
+    margin-bottom: 6px;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.formulario-servicios input,
+.formulario-servicios select,
+.formulario-servicios textarea {
+    padding: 12px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    border: 1px solid #999999;
+    border-radius: 7px;
+    background-color: white;
+}
+
+.boton-enviar {
+    margin-top: 25px;
+    padding: 14px;
+    background-color: #4c8162;
+    color: white;
+    border: none;
+    border-radius: 22px;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.boton-enviar:hover {
+    background-color: #315c45;
+}
+
+
+/* RESULTADO */
+
+.resultado-formulario {
+    margin-top: 30px;
+    padding: 22px;
+    background-color: #e5f2e7;
+    border: 1px solid #b9d5bd;
+    border-radius: 12px;
+}
+
+.resultado-formulario h3 {
+    color: #315c45;
+    font-size: 22px;
+}
+
+
+/* TELEFONO */
+
+.ayuda-telefonica {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    background-color: #e5eef2;
+    border-radius: 16px;
+}
+
+.ayuda-telefonica h2 {
+    margin-top: 0;
+    color: #315c45;
+}
+
+.ayuda-telefonica p {
+    font-size: 17px;
+    line-height: 1.5;
+}
+
+.ayuda-telefonica a {
+    padding: 14px 24px;
+    background-color: #315c45;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 22px;
+}
+
+
+/* CELULAR */
+
+@media (max-width: 768px) {
+
+    .servicio-card {
+        width: 100%;
+    }
+
+    .cabecera-servicios h1 {
+        font-size: 34px;
+    }
+
+    .formulario-servicios {
+        padding: 25px;
+    }
+
+    .ayuda-telefonica {
+        flex-direction: column;
+        text-align: center;
+    }
+}
