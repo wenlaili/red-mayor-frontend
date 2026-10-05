@@ -2,7 +2,13 @@ import { useState } from "react";
 
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+
 import Hero from "./components/Hero";
+import ComoFunciona from "./components/ComoFunciona";
+import Historias from "./components/Historias";
+import FormularioSolicitud from "./components/FormularioSolicitud";
+import BannerAyuda from "./components/BannerAyuda";
+
 import Servicios from "./pages/Servicios";
 
 export default function App() {
@@ -20,9 +26,19 @@ export default function App() {
 
       <main className="flex-1">
 
-        {vistaActual === "inicio" && <Hero />}
+        {vistaActual === "inicio" && (
+          <>
+            <Hero />
+            <ComoFunciona />
+            <Historias />
+            <FormularioSolicitud />
+            <BannerAyuda />
+          </>
+        )}
 
-        {vistaActual === "servicios" && <Servicios />}
+        {vistaActual === "servicios" && (
+          <Servicios />
+        )}
 
       </main>
 
